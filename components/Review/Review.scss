@@ -1,0 +1,43 @@
+.review {
+  padding: 65px 40px;
+
+  &.--peach {
+    background-color: var(--color-peach);
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
+
+  &__desc {
+    color: var(--color-gray-3)
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    &-item {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__text {
+    letter-spacing: 0.02em;
+    color: var(--color-gray-4);
+  }
+}

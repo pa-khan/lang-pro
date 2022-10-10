@@ -1,0 +1,19 @@
+.header {
+  background: var(--color-white);
+  box-shadow: 0px 0px 4px rgba(120, 37, 141, 0.15);
+
+  &__case {
+    display: flex;
+    align-items: center;
+    padding: 24px 50px;
+  }
+
+  &__logo {
+    margin-right: 55px;
+  }
+
+  &__auth {
+    margin-left: auto;
+  }
+
+}

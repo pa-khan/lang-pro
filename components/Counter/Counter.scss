@@ -1,0 +1,20 @@
+.counter {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.13;
+  color: #fff;
+  padding: 4px 22px;
+  border-radius: 100px;
+
+  &.--blue {
+    background-color: var(--color-blue);
+  }
+
+  &.--purple {
+    background-color: var(--color-purple);
+  }
+
+  &.--red {
+    background-color: var(--color-red);
+  }
+}

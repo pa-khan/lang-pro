@@ -1,0 +1,42 @@
+.reg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding: 92px 155px 92px 100px;
+    background: #EFEFFF;
+    border-radius: 40px;
+  }
+
+  &__content {
+    max-width: 600px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  &__field {
+    width: 100%;
+    max-width: 405px;
+    margin-right: 20px;
+  }
+
+  &__checkbox {
+    margin-top: 25px;
+  }
+
+  &__img {
+    margin-left: auto;
+    width: 346px;
+  }
+
+}

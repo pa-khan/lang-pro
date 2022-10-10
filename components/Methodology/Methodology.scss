@@ -1,0 +1,37 @@
+.methodology {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrap {
+    position: relative;
+    padding: 123px 105px 140px 0;
+    background: linear-gradient(135deg, rgba(46, 144, 209, 0.1) 0%, rgba(120, 37, 141, 0.1) 100%);
+    border-radius: 40px;
+  }
+
+  &__img {
+    position: absolute;
+    left: 84px;
+    bottom: -68px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    u {
+      color: inherit;
+      background: linear-gradient(132.51deg, #2E90D1 0, #78258D 83.67%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+    }
+  }
+}

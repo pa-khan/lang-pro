@@ -1,0 +1,71 @@
+.field {
+  &__title {
+    line-height: 1.13;
+  }
+
+  &__area {
+    display: block;
+    width: 100%;
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    font-size: var(--size-main);
+    font-family: var(--font-main);
+    font-weight: 500;
+
+    &::placeholder {
+      opacity: 1;
+      color: #828282;
+    }
+  }
+
+  &.--bg-white {
+    .field {
+      &__area {
+        background-color: var(--color-white);
+      }
+    }
+
+    &.--sm {
+      .field {
+        &__area {
+          border-radius: 8px;
+        }
+      }
+    }
+
+    &.--md {
+      .field {
+        &__area {
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  &.--sm {
+    .field {
+      &__title {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      &__area {
+        height: 48px;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+    }
+  }
+
+  &.--md {
+    .field {
+      &__area {
+        height: 60px;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+    }
+  }
+}

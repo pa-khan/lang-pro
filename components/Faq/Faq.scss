@@ -1,0 +1,34 @@
+.faq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  --faq-inner-width: 456px;
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: var(--faq-inner-width);
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    width: calc(100% - var(--faq-inner-width));
+    padding-left: 40px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+  }
+
+}

@@ -8,6 +8,6 @@ export default defineNuxtConfig({
     "~images": "/assets/images",
   },
   css: [
-    '@/assets/styles/main.scss'
+    '@/assets/styles/main.sass'
   ],
 })
