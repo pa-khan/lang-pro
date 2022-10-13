@@ -34,4 +34,26 @@
 
     }
   }
+
+  &__text {
+    ul {
+      li {
+        position: relative;
+        padding-left: 36px;
+        margin-bottom: 16px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: 0;
+          width: 16px;
+          height: 16px;
+          background: linear-gradient(135deg, #2E90D1 0%, #78258D 100%);
+          border-radius: 50%;
+        }
+      }
+    }
+
+  }
 }

@@ -1,0 +1,33 @@
+.share {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    margin-right: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      path {
+        fill: var(--color-blue)
+      }
+    }
+  }
+}

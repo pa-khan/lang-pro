@@ -1,8 +1,9 @@
 <template>
   <div v-if="links" class="nav">
     <div class="nav__list">
-      <div v-for="link of links" :key="link.title" class="nav__item">
-        <a class="nav__link" :href="link.href" @click.prevent="toLink(link.href)">
+      <div v-for="link of links" :key="link.title" class="nav__item" :class="link.isOpen ? '--open' : null">
+        <a class="nav__link" :href="link.href"
+          @click.prevent="link.sub ? link.isOpen = !link.isOpen : toLink(link.href)">
           <div class="nav__link-title">{{ link.title }}</div>
           <div class="nav__link-arrow" v-if="link.sub">
             <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">

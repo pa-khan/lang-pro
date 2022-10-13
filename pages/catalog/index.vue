@@ -1,7 +1,9 @@
 <template>
-  <Breadcrumb />
-  <Title value="Курсы" />
-  <Cat />
+  <main class="main">
+    <Breadcrumb />
+    <Title value="Курсы" />
+    <Cat />
+  </main>
 </template>
 <script>
 export default {

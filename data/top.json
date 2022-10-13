@@ -4,27 +4,53 @@
     "delay": 45,
     "modules": 3,
     "price": 6520,
-    "lang": "de"
+    "lang": "de",
+    "slug": "de",
+    "level": "start",
+    "goal": [
+      ""
+    ]
   },
   {
     "title": "Китайский для среднего уровня",
     "delay": 40,
     "modules": 5,
     "price": 6470,
-    "lang": "cn"
+    "lang": "cn",
+    "slug": "cn",
+    "level": [
+      "start"
+    ],
+    "goal": [
+      ""
+    ]
   },
   {
     "title": "Испанский для среднего уровня",
     "delay": 42,
     "modules": 4,
     "price": 7220,
-    "lang": "es"
+    "lang": "es",
+    "slug": "es",
+    "level": [
+      "start"
+    ],
+    "goal": [
+      ""
+    ]
   },
   {
     "title": "Немецкий для начального уровня",
     "delay": 45,
     "modules": 3,
     "price": 6520,
-    "lang": "de"
+    "lang": "de",
+    "slug": "de",
+    "level": [
+      "start"
+    ],
+    "goal": [
+      ""
+    ]
   }
 ]

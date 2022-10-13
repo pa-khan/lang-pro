@@ -20,6 +20,7 @@ export default {
         {
           title: 'Еще',
           href: '#',
+          isOpen: false,
           sub: [
             {
               title: 'FAQ',

@@ -1,3 +1,5 @@
+import { toLink } from "~/utils";
+
 export default {
   name: 'Product',
   data() {
@@ -28,6 +30,9 @@ export default {
       return mode;
     }
 
+  },
+  methods: {
+    toLink
   },
   props: {
     element: Object

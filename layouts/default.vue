@@ -1,7 +1,6 @@
 <template>
   <Header />
-  <main class="main">
-    <NuxtPage />
-  </main>
+  <NuxtPage />
   <Footer />
+  <Cookie />
 </template>

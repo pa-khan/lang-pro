@@ -1,14 +1,16 @@
 <template>
-  <Intro />
-  <Top />
-  <Audience />
-  <Why />
-  <Methodology />
-  <Work />
-  <Reviews />
-  <Reg />
-  <Articles />
-  <Faq />
+  <main class="main">
+    <Intro />
+    <Top />
+    <Audience />
+    <Why />
+    <Methodology />
+    <Work />
+    <Reviews />
+    <Reg />
+    <Articles />
+    <Faq />
+  </main>
 </template>
 <script>
 export default {

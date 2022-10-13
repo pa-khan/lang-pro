@@ -2,7 +2,7 @@
   <div class="product" :class="bgMode">
     <div class="product__body">
       <div class="product__lang">
-        <img :src="`assets/images/flags/${element.lang}.png`" alt="">
+        <img :src="`/assets/images/flags/${element.lang}.png`" alt="">
       </div>
       <div class="product__title">{{ element.title }}</div>
       <div class="product__data">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="product__foot">
-      <Button class="product__btn-more --link" href="/">
+      <Button class="product__btn-more --link" :href="'/catalog/' + element.slug">
         <template #default>Узнать подробнее</template>
         <template #iconRight>
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

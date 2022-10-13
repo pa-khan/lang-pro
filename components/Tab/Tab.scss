@@ -1,0 +1,24 @@
+.tab {
+  padding: 5px 20px;
+  background: #EFEFFF;
+  border-radius: 4px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-gray-4);
+  transition: var(--transition);
+  cursor: pointer;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &.--checked {
+    color: #fff;
+    background-color: var(--color-purple);
+  }
+}

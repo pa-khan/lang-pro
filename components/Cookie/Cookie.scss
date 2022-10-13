@@ -1,0 +1,38 @@
+.cookie {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 5%;
+  bottom: 5%;
+  padding: 24px 78px 24px 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(46, 144, 209, 0.12);
+  border-radius: 10px;
+  width: 570px;
+
+  &__text {
+    letter-spacing: 0.02em;
+
+    a {
+      color: var(--color-purple);
+      border-bottom: 1px solid transparent;
+      transition: var(--transition);
+
+      &:hover {
+        border-color: var(--color-purple);
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
