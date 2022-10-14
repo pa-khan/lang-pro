@@ -9,7 +9,7 @@
     <Reviews />
     <Reg />
     <Articles />
-    <Faq />
+    <Questions />
   </main>
 </template>
 <script>

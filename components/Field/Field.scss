@@ -1,6 +1,10 @@
 .field {
   &__title {
     line-height: 1.13;
+
+    u {
+      color: #E3E3E3;
+    }
   }
 
   &__area {
@@ -13,10 +17,46 @@
     font-size: var(--size-main);
     font-family: var(--font-main);
     font-weight: 500;
+    transition: var(--transition);
 
     &::placeholder {
       opacity: 1;
       color: #828282;
+    }
+  }
+
+  &.--bg-gray {
+    .field {
+      &__area {
+        border: 1px solid #f2f2f2;
+        background-color: #f2f2f2;
+      }
+    }
+
+    &.--sm {
+      .field {
+        &__area {
+          border-radius: 8px;
+        }
+      }
+    }
+
+    &.--md {
+      .field {
+        &__area {
+          border-radius: 8px;
+        }
+      }
+    }
+
+    &.--focus,
+    &.--filled {
+      .field {
+        &__area {
+          background-color: var(--color-white);
+          border-color: var(--color-purple);
+        }
+      }
     }
   }
 
@@ -61,11 +101,36 @@
 
   &.--md {
     .field {
+      &__title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+
       &__area {
         height: 60px;
         padding-left: 18px;
         padding-right: 18px;
       }
     }
+  }
+
+  &.--textarea {
+    .field {
+      &__area {
+        resize: none;
+      }
+    }
+
+    &.--md {
+      .field {
+        &__area {
+          height: 148px;
+          padding-top: 18px;
+          padding-bottom: 18px;
+        }
+      }
+    }
+
   }
 }

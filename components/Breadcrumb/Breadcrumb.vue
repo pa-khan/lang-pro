@@ -5,10 +5,10 @@
         <template v-for="(crumb, index) in crumbs" :key="index">
           <div class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             <router-link :to="crumb" v-if="index < crumbs.length - 1" :title="crumb.meta.title" itemprop="item">
-              <span itemprop="name">{{ crumb.meta.title }}</span>
+              <span itemprop="name">{{ crumb?.meta?.title }}</span>
             </router-link>
             <u v-else itemprop="item">
-              <span itemprop="name">{{ crumb.meta.title }}</span>
+              <span itemprop="name">{{ $route.matched[0].meta.title }}</span>
             </u>
             <meta itemprop="position" :content="index + 1">
           </div>

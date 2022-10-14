@@ -1,0 +1,36 @@
+.how {
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    background: var(--color-white);
+    box-shadow: 0px 4px 20px #F7F6FB;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 16px;
+    --how-img-width: 333px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__img {
+    width: var(--how-img-width);
+  }
+
+  &__content {
+    width: calc(100% - var(--how-img-width));
+    padding-left: 40px;
+  }
+
+  &__desc {
+    color: var(--color-gray-3)
+  }
+
+}

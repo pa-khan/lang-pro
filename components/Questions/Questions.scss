@@ -1,7 +1,7 @@
-.faq {
+.questions {
   padding-top: 50px;
   padding-bottom: 140px;
-  --faq-inner-width: 456px;
+  --questions-inner-width: 456px;
 
   &__wrap {
     display: flex;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: var(--faq-inner-width);
+    width: var(--questions-inner-width);
   }
 
   &__title {
@@ -23,7 +23,7 @@
   }
 
   &__list {
-    width: calc(100% - var(--faq-inner-width));
+    width: calc(100% - var(--questions-inner-width));
     padding-left: 40px;
   }
 

@@ -4,6 +4,7 @@ export default {
   name: 'Nav',
   data() {
     return {
+      lastOpenSubNavLink: null,
       links: [
         {
           title: 'Курсы',
@@ -11,11 +12,11 @@ export default {
         },
         {
           title: 'О нас',
-          href: '/about/',
+          href: '/about',
         },
         {
           title: 'Блог',
-          href: '/blog/',
+          href: '/blog',
         },
         {
           title: 'Еще',
@@ -24,15 +25,15 @@ export default {
           sub: [
             {
               title: 'FAQ',
-              href: '/faq/',
+              href: '/faq',
             },
             {
               title: 'Контакты',
-              href: '/contacts/',
+              href: '/contacts',
             },
             {
               title: 'Условия оплаты',
-              href: '/pay/',
+              href: '/pay',
             },
           ]
         },
@@ -40,6 +41,20 @@ export default {
     }
   },
   methods: {
-    toLink
+    toLink,
+    toggleNav(link) {
+      this.lastOpenSubNavLink = link;
+      link.isOpen = !link.isOpen;
+    },
+  },
+  mounted() {
+    document.addEventListener('click', (event) => {
+
+      if (this.lastOpenSubNavLink && !event.target.closest('.nav__item')) {
+        this.lastOpenSubNavLink.isOpen = false;
+        this.lastOpenSubNavLink = null;
+      }
+
+    });
   }
 }

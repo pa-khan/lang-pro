@@ -6,8 +6,8 @@
       <T2 class="article__text" :value="element.text"></T2>
     </div>
     <div class="article__foot">
-      <div class="article__label">{{ element.label }}</div>
-      <Button class="article__btn-more --link" href="/">
+      <div class="article__label" :class="labelClass">{{ label }}</div>
+      <Button class="article__btn-more --link" :href="`/blog/${element.slug}`">
         <template #default>Подробнее</template>
         <template #iconRight>
           <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

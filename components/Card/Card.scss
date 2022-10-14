@@ -1,8 +1,10 @@
 .card {
   --card-right-width: 455px;
+  padding-bottom: 50px;
 
   &__wrap {
     display: flex;
+    align-items: flex-start;
   }
 
   &__left {
@@ -49,7 +51,45 @@
     margin-top: 50px;
   }
 
+  &__how {
+    margin-top: 50px;
+  }
+
+  &__reviews {
+    margin-top: 50px;
+
+    &-head {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 32px;
+    }
+
+    &-title {
+      max-width: 400px;
+    }
+
+    &-more {
+      margin-left: auto;
+    }
+
+    &-item {
+      border-radius: 10px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__similar {
+    margin-top: 50px;
+  }
+
   &__right {
+    top: 28px;
+    right: 0;
+    position: sticky;
     width: var(--card-right-width);
   }
 

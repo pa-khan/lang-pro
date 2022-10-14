@@ -1,6 +1,10 @@
 .cat {
   padding-bottom: 80px;
 
+  &__title {
+    margin-bottom: 30px;
+  }
+
   &__langs {
     display: flex;
     margin-bottom: 32px;

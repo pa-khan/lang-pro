@@ -2,7 +2,25 @@ export default {
   name: 'Card',
   data() {
     return {
-      data: []
+      data: [],
+      how: [
+        {
+          title: 'Онлайн-платформа <br>для обучения и выполнения заданий',
+          desc: '',
+          img: 'how-1.png'
+        },
+        {
+          title: 'Полностью <br>интерактивный формат',
+          desc: '(3D-учитель расскажет вам весь материал)',
+          img: 'how-2.png'
+        },
+        {
+          title: 'Видео чат для общения <br>с сокурсниками',
+          desc: '',
+          img: 'how-3.png'
+        },
+
+      ]
     }
   },
   computed: {

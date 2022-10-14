@@ -1,13 +1,13 @@
 <template>
   <div v-if="list" class="how">
-    <H2 class="how__title">Как проходит обучение</H2>
+    <H3 class="how__title" value="Как проходит обучение"></H3>
     <div class="how__list">
       <div v-for="item in list" class="how__item">
         <div class="how__img">
-          <img :src="item.img" alt="">
+          <img :src="`/assets/images/${item.img}`" alt="">
         </div>
         <div class="how__content">
-          <H4 class="how__name">{{ item.name }}</H4>
+          <H4 class="how__name" :value="item.title"></H4>
           <div v-if="item.desc" class="how__desc">{{ item.desc }}</div>
         </div>
       </div>

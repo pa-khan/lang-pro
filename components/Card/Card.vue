@@ -14,7 +14,7 @@
               <Share class="card__share"></Share>
             </div>
             <Program class="card__program" :list="element.program" />
-            <How class="card__how" :list="element.how" />
+            <How class="card__how" :list="how" />
             <div v-if="element.reviews" class="card__reviews">
               <div class="card__reviews-head">
                 <H3 class="card__reviews-title" value="Отзывы о курсе"></H3>
@@ -22,7 +22,7 @@
               </div>
               <div class="card__reviews-body">
                 <div class="card__reviews-list">
-                  <Review v-for="item in element.reviews" class="reviews__item --blue" :element="item"></Review>
+                  <Review v-for="item in element.reviews" class="card__reviews-item --blue" :element="item"></Review>
                 </div>
               </div>
             </div>

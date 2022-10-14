@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <!-- <Breadcrumb /> -->
+    <Breadcrumb />
     <Card :element="course" />
     <Reg />
   </main>

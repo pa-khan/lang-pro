@@ -1,7 +1,6 @@
 <template>
   <main class="main">
     <Breadcrumb />
-    <Title value="Курсы" />
     <Cat />
   </main>
 </template>

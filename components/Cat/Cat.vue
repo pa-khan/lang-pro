@@ -1,6 +1,7 @@
 <template>
   <div class="cat">
     <Case>
+      <H2 class="cat__title" value="Курсы"></H2>
       <div class="cat__langs">
         <Tab class="cat__lang" v-for="lang in langs.list" v-model:value="langs.value" :type="lang.type"
           :title="lang.title">

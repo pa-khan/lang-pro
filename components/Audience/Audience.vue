@@ -3,7 +3,7 @@
     <Case>
       <div class="audience__wrap">
         <div class="audience__content">
-          <H2 class="audience__title" value="Кому подойдет <u>L2GO</u>"></H2>
+          <H2 class="audience__title" value="Кому подойдет <i>L2GO</i>"></H2>
           <T1 class="audience__text" value="<p><u>Language to go</u> подойдет всем, кто хочет за короткий срок качественно изменить свою жизнь, освоив
               иностранный язык.</p>"></T1>
           <Button class="audience__button --md --bg-violet">Попробовать бесплатно</Button>

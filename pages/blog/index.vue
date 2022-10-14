@@ -1,6 +1,9 @@
 <template>
-  <Breadcrumb />
-  <Title value="Блог <br><u>Language to go</u>" />
+  <main class="main">
+    <Breadcrumb />
+    <Blog />
+  </main>
+
 
 </template>
 <script>

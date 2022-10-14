@@ -28,6 +28,14 @@
     background-color: #fff;
     background: #EFEFFF;
     border-radius: 4px;
+
+    &.--blue {
+      background: #DEF1FF;
+    }
+
+    &.--pink {
+      background: #FFEFEF;
+    }
   }
 
   &__btn-more {
