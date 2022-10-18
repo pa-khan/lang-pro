@@ -203,6 +203,7 @@
       transition: var(--transition);
       transform: translateY(100%);
       margin-bottom: 0;
+      overflow-y: auto;
 
       &.--show {
         transform: translateY(0%);
