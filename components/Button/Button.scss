@@ -9,6 +9,10 @@
   cursor: pointer;
   outline: none;
 
+  &.--hidden {
+    display: none;
+  }
+
   &.--sm {
     line-height: 22px;
     font-weight: 600;
@@ -81,9 +85,62 @@
           margin-left: 10px;
         }
       }
+
+    }
+
+    &:hover {
+      color: var(--color-blue);
+
+      path {
+        stroke: var(--color-blue);
+      }
     }
   }
 
 
+
+}
+
+@media screen and (max-width: 992px) {
+  .button {
+    &.--link {
+      font-size: 14px;
+
+      .button {
+        &__icon {
+          &.--right {
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .button {
+
+    &.--sm,
+    &.--md {
+      font-size: 16px;
+    }
+
+    &.--link {
+      .button {
+        &__icon {
+          width: 16px;
+          height: 16px;
+
+          &.--right {
+            margin-left: 4px;
+          }
+        }
+
+      }
+    }
+  }
 
 }

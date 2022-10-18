@@ -1,8 +1,8 @@
 <template>
-  <main class="main">
+  <Main>
     <Breadcrumb />
     <Blog />
-  </main>
+  </Main>
 
 
 </template>

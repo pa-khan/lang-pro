@@ -8,3 +8,10 @@
     color: var(--color-purple)
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

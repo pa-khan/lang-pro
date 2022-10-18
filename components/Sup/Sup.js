@@ -7,6 +7,6 @@ export default {
     img: String,
     formTitle: String,
     formDesc: String,
-    isAlertShow: Boolean
+    isAlertShow: Boolean,
   }
 }

@@ -23,7 +23,7 @@
 
   &__logo {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 
     svg {
 
@@ -40,7 +40,7 @@
     opacity: 0.8;
     font-size: 14px;
     line-height: 1.2;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
   }
 
   &__pays {
@@ -154,5 +154,145 @@
       }
     }
   }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__col {
+      &:nth-of-type(1) {
+        width: 205px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    &__top {
+      padding-bottom: 75px;
+
+      &-wrap {
+        flex-wrap: wrap;
+        margin-bottom: -60px;
+      }
+    }
+
+    &__col {
+      width: 50%;
+      margin-bottom: 60px;
+      padding-right: 40px;
+
+      &:nth-of-type(1) {
+        order: 1;
+        width: 50%;
+      }
+
+      &:nth-of-type(2) {
+        order: 3;
+      }
+
+      &:nth-of-type(3) {
+        order: 4;
+      }
+
+      &:nth-of-type(4) {
+        order: 2;
+      }
+    }
+
+    &__desc {
+      max-width: 300px;
+    }
+
+    &__bot {
+      &-wrap {
+        align-items: center;
+      }
+    }
+
+    &__copy {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__links {
+      &-item {
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 30px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__top {
+      padding-top: 45px;
+      padding-bottom: 45px;
+
+      &-wrap {
+        margin-bottom: -45px;
+      }
+    }
+
+    &__col {
+      padding-right: 0;
+      width: 100% !important;
+      margin-bottom: 45px;
+    }
+
+    &__logo {
+      width: 160px;
+      margin-bottom: 25px;
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 30px;
+    }
+
+    &__socials {
+      margin-top: 20px;
+    }
+
+    &__bot {
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+      &-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &__copy {
+      margin-bottom: 12px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 0;
+
+      &-item {
+        margin-right: 0;
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
 
 }

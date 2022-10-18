@@ -20,11 +20,14 @@
                 <H3 class="card__reviews-title" value="Отзывы о курсе"></H3>
                 <Button class="card__reviews-more --sm --b-violet" href="/reviews">Все отзывы</Button>
               </div>
-              <div class="card__reviews-body">
-                <div class="card__reviews-list">
-                  <Review v-for="item in element.reviews" class="card__reviews-item --blue" :element="item"></Review>
+              <div class="card__reviews-body swiper" ref="reviewsSlider">
+                <div class="card__reviews-list swiper-wrapper">
+                  <Review v-for="item in element.reviews" class="card__reviews-item swiper-slide --blue"
+                    :element="item"></Review>
                 </div>
               </div>
+              <div class="card__reviews-pagination swiper-pagination dots" ref="reviewsPagination"></div>
+              <Button class="card__reviews-more --hidden --sm --b-violet" href="/reviews">Все отзывы</Button>
             </div>
             <Similar class="card__similar" :list="element.similar" />
           </div>
@@ -52,6 +55,7 @@
           <Best class="card__best" :list="element.best" />
         </div>
       </div>
+      <Similar class="card__similar --hidden" :list="element.similar" />
     </Case>
   </div>
 </template>

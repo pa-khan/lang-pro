@@ -1,3 +1,6 @@
+import Swiper, { Pagination } from 'swiper';
+import 'swiper/css';
+
 export default {
   name: 'Card',
   data() {
@@ -61,6 +64,26 @@ export default {
     this.setDataElement('tasks', 'Заданий');
     this.setDataElement('tests', 'Тестов');
     this.setDataElement('expert', 'Занятий с экспертом');
+  },
+  mounted() {
+    new Swiper(this.$refs.reviewsSlider, {
+      enabled: true,
+      slidesPerView: 1,
+      spaceBetween: 16,
+      pagination: {
+        el: this.$refs.reviewsPagination,
+        type: 'bullets',
+        clickable: true,
+      },
+      modules: [Pagination],
+      breakpoints: {
+        769: {
+          enabled: false,
+          slidesPerView: 'auto',
+        },
+      }
+    })
+
   },
   props: {
     element: Object

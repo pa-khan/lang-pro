@@ -2,6 +2,12 @@
 @import vars
 @import reset
 
+#__nuxt
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+//   overflow-x: hidden
+
 .dots.swiper-pagination
   display: flex
   align-items: center
@@ -38,3 +44,10 @@
       cursor: default
       &:before
         background-color: var(--color-purple)
+
+.overflow-disabled
+  overflow: hidden
+
+@media screen and (max-width: 992px)
+  section
+    overflow: hidden

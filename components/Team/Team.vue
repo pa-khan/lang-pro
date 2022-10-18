@@ -5,13 +5,15 @@
       <T1 class="team__subtitle"
         value="Носители языка, преподаватели зарубежных университетов, которые много лет работают в том числе и в России, владеют методиками преподавания своего языка, как иностранного и прекрасно знают нюансы преподавания именно в русскоязычной среде.">
       </T1>
-      <div class="team__list">
-        <div v-for="item in list" class="team__item">
-          <div class="team__item-img">
-            <img :src="`/assets/images/${item.img}`" alt="">
+      <div class="team__inner swiper" ref="slider">
+        <div class="team__list swiper-wrapper">
+          <div v-for="item in list" class="team__item swiper-slide">
+            <div class="team__item-img">
+              <img :src="`/assets/images/${item.img}`" alt="">
+            </div>
+            <div class="team__item-name">{{ item.name }}</div>
+            <div class="team__item-desc">{{ item.desc }}</div>
           </div>
-          <div class="team__item-name">{{ item.name }}</div>
-          <div class="team__item-desc">{{ item.desc }}</div>
         </div>
       </div>
     </Case>

@@ -31,48 +31,17 @@
     }
 
   }
+}
 
-  &__head {
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    letter-spacing: 0.02em;
-    cursor: pointer;
+@media screen and (max-width: 768px) {
+  .program {
+    &__title {
+      margin-bottom: 30px;
+    }
 
-  }
-
-  &__module {
-    font-weight: 600;
-    margin-right: 8px;
-    color: var(--color-purple-dark);
-  }
-
-  &__name {
-    font-weight: 600;
-    margin-right: 10px;
-  }
-
-  &__section {
-    margin-left: auto;
-    color: var(--color-gray-3);
-  }
-
-  &__arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-
-    svg {
-      transition: .3s;
-
+    &__item {
+      margin-bottom: 16px;
     }
   }
 
-  &__body {
-    height: 0;
-    padding: 0 24px;
-  }
 }

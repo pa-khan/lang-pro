@@ -20,3 +20,51 @@
     margin-top: 60px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .top {
+    padding-bottom: 35px;
+
+    &__title {
+      max-width: 470px;
+    }
+
+    &__pagination {
+      margin-top: 30px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    &__head {
+      margin-bottom: 30px;
+    }
+
+    &__slider {
+      overflow: visible;
+    }
+
+    &__item {
+      width: 272px;
+    }
+
+    &__btn-more {
+      display: none;
+      margin-top: 32px;
+
+      &.--hidden {
+        display: flex;
+      }
+    }
+
+    &__pagination.dots {
+      display: none;
+    }
+  }
+
+}

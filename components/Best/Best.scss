@@ -58,3 +58,12 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .best {
+    &__value {
+      white-space: nowrap;
+    }
+  }
+
+}

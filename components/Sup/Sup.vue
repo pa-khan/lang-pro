@@ -22,9 +22,9 @@
                     fill="#78258D" />
                 </svg>
               </div>
-              <H3 class="sup__alert-title" value="Заголовок общая информация"></H3>
+              <H3 class="sup__alert-title" value="Общая информация"></H3>
             </div>
-            <div class="sup__alert-head">
+            <div class="sup__alert-body">
               <T2 class="sup__alert-text"
                 value="<p>Здесь мы собираем предложения по улучшению <u>Language to go</u> и <u>Language to go</u> <br>Если вы столкнулись с техническими сложностями, свяжитесь с поддержкой</p><p>Пожелания по развитию <u>Language to go</u> можно оставить здесь. <br>Пожелания о добавлении на <u>Language to go</u> курсов, материалов, статей можно оставить здесь.</p>">
               </T2>

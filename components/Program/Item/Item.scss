@@ -45,6 +45,7 @@
   &__module {
     font-weight: 600;
     margin-right: 8px;
+    white-space: nowrap;
     color: var(--color-purple-dark);
   }
 
@@ -55,6 +56,7 @@
 
   &__section {
     margin-left: auto;
+    white-space: nowrap;
     color: var(--color-gray-3);
   }
 
@@ -78,4 +80,74 @@
     transition: var(--transition);
     border-top: 2px solid transparent;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .prog {
+    &__module {
+      span {
+        display: none;
+      }
+    }
+
+    &__section {
+      span {
+        display: none;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .prog {
+
+    &__module,
+    &__section {
+      span {
+        display: inline;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .prog {
+    &__head {
+      position: relative;
+      flex-wrap: wrap;
+      padding: 24px 16px;
+    }
+
+    &__module,
+    &__name,
+    &__section {
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 12px;
+    }
+
+    &__section {
+      margin-bottom: 0;
+    }
+
+    &__arrow {
+      position: absolute;
+      top: 24px;
+      right: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__body {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
 }

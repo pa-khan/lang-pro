@@ -47,3 +47,35 @@
   }
 
 }
+
+
+@media screen and (max-width: 992px) {
+  .t1 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .t1 {
+    font-size: 14px;
+    line-height: 20px;
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    ul,
+    ol {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    ul li,
+    ol li {
+      margin-bottom: 12px;
+    }
+  }
+
+}

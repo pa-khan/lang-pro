@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <Main>
     <Intro />
     <Top />
     <Audience />
@@ -10,7 +10,7 @@
     <Reg />
     <Articles />
     <Questions />
-  </main>
+  </Main>
 </template>
 <script>
 export default {

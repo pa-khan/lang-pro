@@ -1,8 +1,9 @@
+import IMask from 'imask';
+
 export default {
   name: 'Field',
   data() {
     return {
-
       isFilled: false,
       isFocus: false,
     }
@@ -14,17 +15,30 @@ export default {
       } else {
         this.isFilled = false;
       }
-
-      this.$emit('update:value', value);
+      this.value = value;
+      this.$emit('update:modelValue', value);
     }
+  },
+  mounted() {
+    if (this.validation) {
+      switch (this.validation) {
+        case "phone":
+          IMask(this.$refs.area, {
+            mask: '+{7} (900) 000-00-00'
+          })
+      }
+    }
+
   },
   props: {
     type: String,
     title: String,
     placeholder: String,
-    value: String,
+    modelValue: String,
+    validation: String,
+    maxlength: Number
   },
   emits: [
-    'update:value'
+    'update:modelValue'
   ]
 }

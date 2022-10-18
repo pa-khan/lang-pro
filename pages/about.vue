@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <Main>
     <Breadcrumb />
     <div class="about">
       <Case>
@@ -20,7 +20,7 @@
     </div>
     <Team />
     <Reg />
-  </main>
+  </Main>
 </template>
 <script>
 export default {
@@ -98,6 +98,75 @@ export default {
     width: 50%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    padding-bottom: 100px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+
+    &__list {
+      margin-top: 40px;
+    }
+
+    &__item {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__content {
+      order: 2
+    }
+
+    &__content,
+    &__img {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__img {
+      order: 1;
+      width: 100%;
+      max-width: 590px;
+      margin-bottom: 36px;
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-bottom: 60px;
+
+    &__title {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 16px;
+    }
+
+    &__img {
+      margin-bottom: 24px;
+    }
+
+    &__item {
+      margin-bottom: 40px;
+
+      &-title {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
   }
 
 }

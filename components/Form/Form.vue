@@ -5,8 +5,8 @@
     <div class="form__wrap">
       <Field class="form__field --md --bg-gray" title="Имя" placeholder="Иван" type="text" v-model="inputName">
       </Field>
-      <Field class="form__field --md --bg-gray" title="Телефон" placeholder="+7 (___) ___-__-__" type="tel"
-        v-model="inputPhone"></Field>
+      <Field class="form__field --md --bg-gray" title="Телефон" validation="phone" placeholder="+7 (___) ___-__-__"
+        type="tel" v-model="inputPhone"></Field>
       <Field class="form__field --md --bg-gray --textarea" title="Сообщение <u>(не обязательно)</u>"
         placeholder="Расскажите нам о возникшем вопрос" type="textarea" v-model="inputPhone"></Field>
       <Checkbox class="form__checkbox --sm --b-gray" v-model:checked="policy">Отправляя заявку, я соглашаюсь с <a

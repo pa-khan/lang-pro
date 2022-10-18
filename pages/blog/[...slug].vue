@@ -1,8 +1,8 @@
 <template>
-  <main class="main">
+  <Main>
     <Breadcrumb />
     <BlogItem :element="item" />
-  </main>
+  </Main>
 </template>
 <script>
 import item from '@/data/blog-item.json';

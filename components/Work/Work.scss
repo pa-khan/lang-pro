@@ -23,6 +23,12 @@
     background-color: var(--color-white);
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &__counter {
     margin-bottom: 35px;
   }
@@ -47,4 +53,136 @@
       object-fit: cover;
     }
   }
+
+  &__pagination.dots {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .work {
+    &__img {
+      height: 170px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .work {
+    &__list {
+      gap: 15px;
+    }
+
+    &__item {
+      padding: 20px
+    }
+
+    &__img {
+      height: 160px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .work {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      flex-direction: row;
+      padding: 30px 20px;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-of-type(even) {
+        .work {
+          &__content {
+            order: 2;
+            padding-left: 40px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    &__content {
+      width: 50%;
+      padding-right: 20px;
+    }
+
+    &__img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    &__inner {
+      overflow: visible;
+    }
+
+    &__list {
+      display: flex;
+      gap: 0;
+    }
+
+    &__item {
+      padding: 24px 16px;
+      flex-direction: column;
+    }
+
+    &__img {
+      order: 1;
+      width: 100%;
+      max-width: 280px;
+      height: 160px;
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      order: 2;
+      width: 100%;
+      padding-left: 0 !important;
+      padding-right: 0;
+    }
+
+    &__counter {
+      margin-bottom: 9px;
+    }
+
+    &__name {
+      margin-bottom: 4px;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+
+    &__pagination.dots {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      margin-top: 18px;
+    }
+  }
+
 }

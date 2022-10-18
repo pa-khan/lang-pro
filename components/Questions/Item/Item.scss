@@ -70,3 +70,21 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .faq-item {
+    &__head {
+      padding: 24px 16px;
+    }
+
+    &__icon {
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+    }
+
+    &__body {
+      padding: 0 16px;
+    }
+  }
+}

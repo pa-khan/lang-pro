@@ -3,7 +3,7 @@
     <Case>
       <div class="top__head">
         <H2 class="top__title" value="Курсы иностранных языков для любого уровня"></H2>
-        <Button class="top__btn-more --sm --b-violet">Все курсы</Button>
+        <Button class="top__btn-more --sm --b-violet" href="/catalog">Все курсы</Button>
       </div>
       <div class="top__body">
         <div class="top__slider swiper" ref="slider">
@@ -13,6 +13,7 @@
         </div>
         <div class="top__pagination swiper-pagination dots" ref="pagination"></div>
       </div>
+      <Button class="top__btn-more --hidden --sm --b-violet" href="/catalog">Все курсы</Button>
     </Case>
   </section>
 </template>

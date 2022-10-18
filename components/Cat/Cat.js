@@ -4,7 +4,9 @@ export default {
   name: 'Cat',
   data() {
     return {
+      isFilterShow: false,
       list: top,
+      langText: 'Все',
       langs: {
         value: 'all',
         list: [
@@ -90,5 +92,32 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    resetFilter() {
+      this.filter.forEach((filterItem) => {
+        console.log(filterItem);
+        filterItem.list.forEach((item) => {
+          console.log(item);
+          item.value = false;
+        });
+      });
+
+      this.langs.value = 'all';
+      this.langText = 'Все'
+    }
+  },
+  watch: {
+    isFilterShow() {
+      const classOverflowDisabled = 'overflow-disabled';
+      const body = document.body;
+
+      if (this.isFilterShow) {
+        body.classList.add(classOverflowDisabled);
+      } else {
+        body.classList.remove(classOverflowDisabled);
+      }
+    },
+
   }
 }

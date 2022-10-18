@@ -3,8 +3,10 @@
     <Case>
       <div class="questions__wrap">
         <div class="questions__inner">
-          <H2 class="questions__title" value="Отвечаем на частые вопросы"></H2>
-          <Button class="questions__btn --md --bg-violet" href="/faq">Задать вопрос</Button>
+          <div class="questions__text">
+            <H2 class="questions__title" value="Отвечаем на частые вопросы"></H2>
+            <Button class="questions__btn --md --bg-violet" href="/faq">Задать вопрос</Button>
+          </div>
           <div class="questions__img">
             <img src="/assets/images/questions-img.png" alt="">
           </div>

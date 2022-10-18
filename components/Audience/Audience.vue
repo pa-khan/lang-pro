@@ -8,15 +8,18 @@
               иностранный язык.</p>"></T1>
           <Button class="audience__button --md --bg-violet">Попробовать бесплатно</Button>
         </div>
-        <div v-if="list" class="audience__list">
-          <div v-for="item in list" :key="item.title" :class="'audience__item --' + item.mode">
-            <div class="audience__item-icon">
-              <img :src="`assets/images/${item.icon}`" alt="">
+        <div class="audience__inner swiper" ref="slider">
+          <div v-if="list" class="audience__list swiper-wrapper">
+            <div v-for="item in list" :key="item.title" :class="'audience__item swiper-slide --' + item.mode">
+              <div class="audience__item-icon">
+                <img :src="`assets/images/${item.icon}`" alt="">
+              </div>
+              <H4 class="audience__item-title" :value="item.title"></H4>
+              <T2 class="audience__item-text" :value="item.text"></T2>
             </div>
-            <H4 class="audience__item-title" :value="item.title"></H4>
-            <T2 class="audience__item-text" :value="item.text"></T2>
           </div>
         </div>
+        <Button class="audience__button --hidden --md --bg-violet">Попробовать бесплатно</Button>
         <div class="audience__bg">
           <svg width="739" height="560" viewBox="0 0 739 560" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.05" fill-rule="evenodd" clip-rule="evenodd"

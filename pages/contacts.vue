@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <Main>
     <Breadcrumb />
     <div class="contacts">
       <Case>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="contacts__text">
                   <div class="contacts__name">По электронке</div>
-                  <div class="contacts__value">
+                  <div class="contacts__value --emails">
                     <p><a href="mailto:info@language2go.ru">info@language2go.ru</a></p>
                     <p><a href="mailto:support@language2go.ru">support@language2go.ru</a></p>
                   </div>
@@ -51,7 +51,7 @@
         </div>
       </Case>
     </div>
-  </main>
+  </Main>
 </template>
 <script>
 export default {
@@ -142,5 +142,125 @@ export default {
     width: calc(100% - var(--contacts-left-width));
     padding-left: 80px;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .contacts {
+    --contacts-left-width: 350px;
+
+    &__item {
+      padding: 20px 30px;
+    }
+
+    &__right {
+      padding-left: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contacts {
+    &__wrap {
+      display: block;
+    }
+
+    &__left {
+      width: 100%;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: -24px;
+    }
+
+    &__item {
+      padding: 35px 40px;
+      width: calc(50% - 12px);
+      margin-bottom: 24px;
+
+      &:nth-of-type(1) {
+        order: 1;
+      }
+
+      &:nth-of-type(3) {
+        order: 2;
+      }
+
+      &:nth-of-type(2) {
+        order: 3;
+        width: 100%;
+      }
+    }
+
+    &__value {
+      &.--emails {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+          margin-right: 24px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 100%;
+      padding-left: 0;
+      padding-top: 60px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding-bottom: 60px;
+
+    &__title {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 16px;
+    }
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      padding: 16px;
+      width: 100%;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__text {
+      margin-left: 25px;
+    }
+
+    &__name {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__value {
+      font-size: 14px;
+      line-height: 20px;
+
+      &.--emails {
+        display: block;
+      }
+    }
+  }
+
 }
 </style>

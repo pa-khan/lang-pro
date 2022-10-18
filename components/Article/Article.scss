@@ -1,4 +1,6 @@
 .article {
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   border: 1px solid #DEF1FF;
   box-shadow: 0px 4px 20px #F7F6FB;
@@ -19,7 +21,8 @@
   &__foot {
     display: flex;
     align-items: center;
-    margin-top: 24px;
+    padding-top: 24px;
+    margin-top: auto;
   }
 
   &__label {
@@ -40,6 +43,19 @@
 
   &__btn-more {
     margin-left: auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    padding: 24px 16px;
+
+    &__label {
+      padding: 5px 12px;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
 }

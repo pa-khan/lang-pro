@@ -7,7 +7,16 @@ export function scrollTop() {
 
 export function toLink(href, before, after) {
   if (before) {
-    before();
+    if (Array.isArray(before)) {
+      console.log(before);
+      before.forEach((item) => {
+        console.log(item);
+
+        item();
+      });
+    } else {
+      before();
+    }
   }
 
   scrollTop();

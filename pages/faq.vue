@@ -1,5 +1,5 @@
 <template>
-  <main class="main">
+  <Main>
     <Breadcrumb />
     <div class="faq">
       <Case>
@@ -16,7 +16,7 @@
       </Case>
     </div>
     <Help />
-  </main>
+  </Main>
 
 </template>
 <script>
@@ -77,5 +77,26 @@ export default {
       margin-bottom: 0;
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .faq {
+    padding: 0;
+
+    &__cats {
+      flex-wrap: wrap;
+    }
+
+    &__cat {
+      margin-bottom: 7px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 16px;
+    }
+  }
+
 }
 </style>

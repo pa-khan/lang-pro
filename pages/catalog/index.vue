@@ -1,8 +1,8 @@
 <template>
-  <main class="main">
+  <Main>
     <Breadcrumb />
     <Cat />
-  </main>
+  </Main>
 </template>
 <script>
 export default {

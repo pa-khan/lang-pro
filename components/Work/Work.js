@@ -1,3 +1,6 @@
+import Swiper, { Pagination } from 'swiper';
+import 'swiper/css';
+
 export default {
   name: 'Work',
   data() {
@@ -20,5 +23,26 @@ export default {
         },
       ]
     }
+  },
+  mounted() {
+    new Swiper(this.$refs.slider, {
+      enabled: true,
+      autoHeight: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: this.$refs.pagination,
+        type: 'bullets',
+        clickable: true,
+      },
+      modules: [Pagination],
+      breakpoints: {
+        769: {
+          slidesPerView: 'auto',
+          enabled: false,
+          spaceBetween: 0,
+        },
+      }
+    })
   }
 }

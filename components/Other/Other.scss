@@ -64,3 +64,36 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .other {
+    &__btn-more {
+      display: none;
+      margin-top: 32px;
+
+      &.--hidden {
+        display: flex;
+      }
+    }
+
+    &__item {
+      padding: 24px 16px;
+      margin-bottom: 12px;
+
+      &-date {
+        font-size: 13px;
+        line-height: 18px;
+      }
+
+      &-label {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      &-foot {
+        margin-top: 16px;
+      }
+    }
+  }
+
+}

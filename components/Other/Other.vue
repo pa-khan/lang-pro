@@ -25,6 +25,7 @@
           </div>
         </div>
       </div>
+      <Button class="other__btn-more --hidden --sm --b-violet" href="/blog">Все новости</Button>
     </div>
   </div>
 </template>

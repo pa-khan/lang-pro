@@ -18,3 +18,12 @@
     background-color: var(--color-red);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .counter {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 2px 16px;
+  }
+
+}

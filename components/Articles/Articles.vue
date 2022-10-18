@@ -3,13 +3,14 @@
     <Case>
       <div class="articles__head">
         <H2 class="artciles__title" value="Полезные новости и статьи"></H2>
-        <Button class="articles__btn-more --sm --b-violet">Все новости</Button>
+        <Button class="articles__btn-more --sm --b-violet" href="/blog">Все новости</Button>
       </div>
       <div class="articles__body">
         <div v-if="list" class="articles__list">
           <Article v-for="item in list" class="articles__item" :element="item"></Article>
         </div>
       </div>
+      <Button class="articles__btn-more --hidden --sm --b-violet" href="/blog">Все новости</Button>
     </Case>
   </section>
 </template>

@@ -45,3 +45,50 @@
     color: var(--color-gray-4);
   }
 }
+
+
+
+@media screen and (max-width: 992px) {
+  .review {
+    padding: 40px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .review {
+    padding: 24px 16px;
+
+    &__head {
+      flex-direction: column;
+      margin-bottom: 14px;
+    }
+
+    &__desc {
+      margin-bottom: 8px;
+    }
+
+    &__rating {
+      margin-left: 0;
+
+      &-item {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+}

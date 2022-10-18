@@ -10,3 +10,29 @@
     padding-right: 0;
   }
 }
+
+@media screen and (max-width: 1480px) {
+  .case {
+    max-width: 1180px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .case {
+    max-width: 972px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .case {
+    max-width: 757px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

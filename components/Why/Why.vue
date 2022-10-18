@@ -14,6 +14,7 @@
           </div>
         </div>
       </div>
+      <Button class="why__btn-more --hidden --md --bg-violet">Начать обучение</Button>
     </Case>
   </section>
 </template>

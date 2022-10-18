@@ -22,5 +22,60 @@
     gap: 40px;
   }
 
+  &__item {
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .articles {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    &__item {
+      &:nth-child(4) {
+        display: flex;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .articles {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__head {
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    &__item {
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+
+    &__btn-more {
+      display: none;
+      margin-top: 32px;
+
+      &.--hidden {
+        display: flex;
+      }
+    }
+  }
 
 }

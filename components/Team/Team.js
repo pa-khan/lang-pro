@@ -1,3 +1,6 @@
+import Swiper, { Pagination } from 'swiper';
+import 'swiper/css';
+
 export default {
   name: 'Team',
   data() {
@@ -25,5 +28,19 @@ export default {
         },
       ]
     }
+  },
+  mounted() {
+    new Swiper(this.$refs.slider, {
+      enabled: true,
+      autoHeight: true,
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      breakpoints: {
+        769: {
+          enabled: false,
+          spaceBetween: 0,
+        },
+      }
+    })
   }
 }

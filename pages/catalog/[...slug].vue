@@ -1,9 +1,9 @@
 <template>
-  <main class="main">
+  <Main>
     <Breadcrumb />
     <Card :element="course" />
     <Reg />
-  </main>
+  </Main>
 </template>
 <script>
 import course from '@/data/course.json';
