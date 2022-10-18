@@ -55,8 +55,10 @@ export default {
       this.isNavShow = false;
     },
     resetNav() {
-      this.lastOpenSubNavLink.isOpen = false;
-      this.lastOpenSubNavLink = null;
+      if (this.lastOpenSubNavLink?.isOpen) {
+        this.lastOpenSubNavLink.isOpen = false;
+        this.lastOpenSubNavLink = null;
+      }
     },
 
     closeSubNav(link) {
@@ -64,6 +66,7 @@ export default {
       this.isNavShow = false;
 
       this.resetNav();
+
     }
 
   },
