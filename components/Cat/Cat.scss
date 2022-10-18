@@ -63,6 +63,11 @@
         margin-bottom: 0;
       }
     }
+
+    &-reset,
+    &-submit {
+      display: none;
+    }
   }
 }
 
@@ -271,6 +276,11 @@
 
       &-reset {
         margin-bottom: 18px;
+      }
+
+      &-reset,
+      &-submit {
+        display: flex;
       }
 
     }
