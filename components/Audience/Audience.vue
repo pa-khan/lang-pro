@@ -12,7 +12,7 @@
           <div v-if="list" class="audience__list swiper-wrapper">
             <div v-for="item in list" :key="item.title" :class="'audience__item swiper-slide --' + item.mode">
               <div class="audience__item-icon">
-                <img :src="`assets/images/${item.icon}`" alt="">
+                <img :src="`/images/${item.icon}`" alt="">
               </div>
               <H4 class="audience__item-title" :value="item.title"></H4>
               <T2 class="audience__item-text" :value="item.text"></T2>

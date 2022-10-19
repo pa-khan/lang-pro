@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="intro__img">
-          <img src="@/assets/images/intro-img.png" alt="">
+          <img src="/images/intro-img.png" alt="">
         </div>
       </div>
     </Case>

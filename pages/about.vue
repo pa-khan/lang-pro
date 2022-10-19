@@ -12,7 +12,7 @@
               <T2 class="about__item-text" :value="item.text"></T2>
             </div>
             <div class="about__img">
-              <img :src="`/assets/images/${item.img}`" alt="">
+              <img :src="`/images/${item.img}`" alt="">
             </div>
           </div>
         </div>

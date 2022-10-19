@@ -8,7 +8,7 @@
             <Button class="questions__btn --md --bg-violet" href="/faq">Задать вопрос</Button>
           </div>
           <div class="questions__img">
-            <img src="/assets/images/questions-img.png" alt="">
+            <img src="/images/questions-img.png" alt="">
           </div>
         </div>
         <div v-if="list" class="questions__list">

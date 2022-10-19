@@ -12,7 +12,7 @@
               <T2 class="work__text" :value="item.text"></T2>
             </div>
             <div v-if="item.img" class="work__img">
-              <img :src="`assets/images/${item.img}`" alt="">
+              <img :src="`/images/${item.img}`" alt="">
             </div>
           </div>
         </div>

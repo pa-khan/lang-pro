@@ -9,7 +9,7 @@
         <div class="team__list swiper-wrapper">
           <div v-for="item in list" class="team__item swiper-slide">
             <div class="team__item-img">
-              <img :src="`/assets/images/${item.img}`" alt="">
+              <img :src="`/images/${item.img}`" alt="">
             </div>
             <div class="team__item-name">{{ item.name }}</div>
             <div class="team__item-desc">{{ item.desc }}</div>

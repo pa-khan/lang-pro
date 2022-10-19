@@ -4,10 +4,11 @@ export default defineNuxtConfig({
     { path: '~/components', extensions: ['vue'] }
   ],
   alias: {
-    "~styles": "/assets/styles",
-    "~images": "/assets/images",
+    "~styles": "/styles",
+    "~images": "/images",
   },
   css: [
     '@/assets/styles/main.sass'
   ],
 })
+

@@ -10,7 +10,7 @@
             <T1 class="why__text" :value="item.text"></T1>
           </div>
           <div class="why__img">
-            <img :src="`assets/images/${item.img}`" alt="">
+            <img :src="`/images/${item.img}`" alt="">
           </div>
         </div>
       </div>

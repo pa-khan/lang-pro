@@ -2,7 +2,7 @@
   <div class="product" :class="bgMode">
     <div class="product__body">
       <div class="product__lang">
-        <img :src="`/assets/images/flags/${element.lang}.png`" alt="">
+        <img :src="`/images/flags/${element.lang}.png`" alt="">
       </div>
       <div class="product__title">{{ element.title }}</div>
       <div class="product__data">

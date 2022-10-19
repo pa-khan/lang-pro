@@ -14,7 +14,7 @@
           </form>
         </div>
         <div class="reg__img">
-          <img src="/assets/images/reg-img.png" alt="">
+          <img src="/images/reg-img.png" alt="">
         </div>
       </div>
     </Case>

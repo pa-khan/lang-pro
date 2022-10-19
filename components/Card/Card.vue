@@ -35,7 +35,7 @@
         <div class="card__right">
           <div class="card__info">
             <div class="card__lang">
-              <img :src="`/assets/images/flags/${element.lang}.png`" alt="">
+              <img :src="`/images/flags/${element.lang}.png`" alt="">
             </div>
 
             <div class="card__price">

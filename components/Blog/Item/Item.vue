@@ -14,7 +14,7 @@
         </div>
         <div class="blog-item__right">
           <div class="blog-item__img">
-            <img src="/assets/images/blog-img.png" alt="">
+            <img src="/images/blog-img.png" alt="">
           </div>
         </div>
       </div>

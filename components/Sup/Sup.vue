@@ -34,7 +34,7 @@
         </div>
         <div class="sup__right">
           <div class="sup__img">
-            <img :src="`/assets/images/${img}`" alt="">
+            <img :src="`/images/${img}`" alt="">
           </div>
         </div>
       </div>

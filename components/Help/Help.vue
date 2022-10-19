@@ -3,7 +3,7 @@
     <Case>
       <div class="help__wrap">
         <div class="help__img">
-          <img src="/assets/images/help-img.png" alt="">
+          <img src="/images/help-img.png" alt="">
         </div>
         <div class="help__content">
           <H2 class="help__title" value="Мы всегда рады помочь!"></H2>

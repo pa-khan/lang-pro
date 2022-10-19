@@ -10,7 +10,7 @@
             <div class="contacts__list">
               <div class="contacts__item">
                 <div class="contacts__icon">
-                  <img src="/assets/images/smartphone-docs.png" alt="">
+                  <img src="/images/smartphone-docs.png" alt="">
                 </div>
                 <div class="contacts__text">
                   <div class="contacts__name">По телефону</div>
@@ -21,7 +21,7 @@
               </div>
               <div class="contacts__item">
                 <div class="contacts__icon">
-                  <img src="/assets/images/envelope.png" alt="">
+                  <img src="/images/envelope.png" alt="">
                 </div>
                 <div class="contacts__text">
                   <div class="contacts__name">По электронке</div>
@@ -33,7 +33,7 @@
               </div>
               <div class="contacts__item">
                 <div class="contacts__icon">
-                  <img src="/assets/images/smartphone.png" alt="">
+                  <img src="/images/smartphone.png" alt="">
                 </div>
                 <div class="contacts__text">
                   <div class="contacts__name">В соц. сетях</div>

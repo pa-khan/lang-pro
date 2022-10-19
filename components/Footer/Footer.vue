@@ -10,7 +10,7 @@
                 иностранных языков.</div>
               <div v-if="pays" class="footer__pays">
                 <div v-for="pay in pays" class="footer__pay">
-                  <img :src="`/assets/images/${pay}`" alt="">
+                  <img :src="`/images/${pay}`" alt="">
                 </div>
               </div>
             </div>

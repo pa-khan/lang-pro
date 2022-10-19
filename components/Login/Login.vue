@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="login__img">
-            <img src="/assets/images/auth-img.png" alt="">
+            <img src="/images/auth-img.png" alt="">
           </div>
         </div>
       </div>

@@ -28,8 +28,10 @@ export default {
       }
 
       return mode;
+    },
+    imgUrl () {
+      return new URL(`assets/images/flags/${this.element.lang}.png`, import.meta.url).href;
     }
-
   },
   methods: {
     toLink

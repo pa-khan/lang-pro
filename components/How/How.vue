@@ -4,7 +4,7 @@
     <div class="how__list">
       <div v-for="item in list" class="how__item">
         <div class="how__img">
-          <img :src="`/assets/images/${item.img}`" alt="">
+          <img :src="`/images/${item.img}`" alt="">
         </div>
         <div class="how__content">
           <H4 class="how__name" :value="item.title"></H4>
