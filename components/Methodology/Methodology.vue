@@ -3,7 +3,7 @@
     <Case>
       <div class="methodology__wrap">
         <div class="methodology__img">
-          <img src="images/methodology-img.png" alt="">
+          <img src="/images/methodology-img.png" alt="">
         </div>
         <div class="methodology__content">
           <H2 class="methodology__title" value="Эффективная методика изучения языка <u>L2GO</u>"></H2>

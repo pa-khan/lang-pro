@@ -7,7 +7,7 @@
       </div>
       <div class="reviews__body">
         <div class="reviews__img">
-          <img src="images/reviews-img.png" alt="">
+          <img src="/images/reviews-img.png" alt="">
           <div class="reviews__bg">
             <svg width="330" height="383" viewBox="0 0 330 383" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="20.5" y="20.5" width="289" height="342" rx="144.5" stroke="#FFEFEF" stroke-width="41" />
